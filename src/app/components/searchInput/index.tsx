@@ -27,7 +27,6 @@ function SearchInput({
     });
 
     const handleClick = (event: any) => {
-        console.log('input click', typeList == 'services' ? 1 : 2);
         dispatch(inputFocus(typeList == 'services' ? 1 : 2));
     }
     const handleBlur = (event: any) => {
@@ -139,11 +138,9 @@ function SearchInput({
             <ul className="list">
                 {
                     items.map((row: any, index: number) => {
-                        console.log(row);
                         return (
                             <li onClick={(e) => selectResult(row)} key={index} className="flex">
                                 <span>{row.name}, {row.distance != undefined ? ("distance: " + row.distance) : ("")} score: {row.score} {list.hits[row.id] > 0 ? ("hits: " + list.hits[row.id]) : ("")}</span>
-                                {/* <span>{row.name}, {row.distance > 0 ? ("distance: " +) : ()}, score: {row.score}, hits: {list.hits[row.id]}</span> */}
                             </li>  
                         )
                     })
@@ -175,7 +172,8 @@ function SearchInput({
                 autoComplete="off" 
                 name={"service_name" + typeList}
                 placeholder={placeholder} 
-                value={q || ''} 
+                // @ts-ignore
+                value={q || (typeList != 'services' ? (list.currentLocation.name) : (""))} 
                 onChange={qTyping}
             />
             {

@@ -6,7 +6,7 @@ class Search {
         const locations = await Store.getState().locations;
         let results:any = [];
         q = q.toLowerCase();
-        
+
         for (const key in locations.list) {
             let name = locations.list[key].name.toLowerCase();
             if(name.startsWith(q)) {
@@ -114,7 +114,6 @@ class Search {
         let nameLenght = name.length;
         let qLenght = q.length;
 
-        console.log(name, q, nameLenght, qLenght);
         return (qLenght/nameLenght) * 100;
     }
 
@@ -140,9 +139,6 @@ class Search {
 
         return distance.toFixed(1)+"km";
     }
-
-
-    // return query(q);
 }
 
 export default new Search;

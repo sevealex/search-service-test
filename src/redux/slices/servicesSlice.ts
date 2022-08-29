@@ -43,7 +43,6 @@ const servicesSlice = createSlice({
     },
 
     removeFromHistory: (state, action) => {
-      // delete state.history[action.payload];
       state.history.splice(action.payload, 1);
     },
 
