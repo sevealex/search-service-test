@@ -1,0 +1,93 @@
+.hidden {
+    display: none !important;
+}
+
+.searchBox {
+    width: 80%;
+    position: relative;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .inputBox {
+    flex: 1
+  }
+  
+  .locations.inputBox input {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.498 0c5.138 0 9.723 4.145 9.494 8.727C21.769 13.747 15.067 24 12.498 24s-9.27-10.141-9.49-15.273C2.78 4.145 7.361 0 12.498 0Zm0 21.71 1.006-.982a36.283 36.283 0 0 0 2.68-3.49 19.706 19.706 0 0 0 3.575-8.51c.111-3.383-3.36-6.546-7.26-6.546-3.903 0-7.37 3.163-7.262 6.545a19.2 19.2 0 0 0 3.575 8.51 24.261 24.261 0 0 0 2.682 3.491c.278.381.618.713 1.006.983h-.002Zm0-8.618c-2.131-.01-3.866-1.704-3.909-3.819.046-2.11 1.783-3.798 3.91-3.798 2.127 0 3.864 1.688 3.91 3.798-.043 2.116-1.778 3.81-3.91 3.819Zm0-2.182a1.643 1.643 0 0 0 1.623-1.654c-.01-.9-.75-1.624-1.658-1.62a1.643 1.643 0 0 0-1.64 1.637c.028.902.766 1.622 1.675 1.637Z' fill='%23454F63'/%3E%3C/svg%3E") no-repeat 16px #fff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left:1px solid #f8f7f7;
+    /* margin-left: -1px; */
+  }
+  
+  .services.inputBox input {
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='26' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='M10.6 20.2a9.6 9.6 0 1 1 0-19.2 9.6 9.6 0 0 1 0 19.2Zm7.2-2.4L25 25l-7.2-7.2Z' stroke='%23000' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat 16px #fff;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  
+  .inputBox input {
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto;
+    background-color: #fff;
+    background-size: 16px;
+    color: #2a2e43;
+    height: 60px;
+    padding-left: 50px;
+    width: 100%;
+    border:1px solid #efefef;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  .inputBox input:focus {
+    border:1px solid #009688;
+    outline: none !important;
+  }
+  
+  .boxList {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 16px 3px rgba(0,0,0,.05);
+    display: block;
+    margin-top: 8px;
+    max-height: 550px;
+    overflow-y: scroll;
+    width: 100%;
+    /* padding: 10px; */
+  }
+  
+  .listBox {
+    padding-top:10px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .listBox .title {
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  .deleteItem {
+    padding-right: 5px;
+  }
+  
+  .list li:hover {
+    background-color: #f8f7f7;
+  }
+  .list li {
+    line-height: 30px;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    padding: 10px 10px 10px 20px;
+  }
+  .list li span.query {
+    flex: 1
+    }
+  .deleteItem {
+    cursor: pointer;
+    z-index: 2;
+  }

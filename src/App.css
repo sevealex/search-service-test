@@ -2,15 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+
 }
 
 .App-header {
@@ -37,3 +30,11 @@
     transform: translateY(0px);
   }
 }
+
+.searchBox {
+  width: 80%;
+  position: relative;
+  text-align: left;
+  font-size: 16px;
+}
+
